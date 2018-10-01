@@ -296,3 +296,26 @@ h1 {
 	width:370px;
 	height:370px;
 }
+
+.borderrect {
+	width: 30vw;
+	height: 30vh;
+	background-color: none;
+	border-style: solid;
+	border-width: 10px;
+	border-color: #96d1ff;
+	position: fixed;
+	top: 30%;
+	left: 35%;
+}
+
+.bordercirc {
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	position: fixed;
+	top: 25%;
+	left: 35%;
+	background-color: #ff6d3d;
+	opacity: 0.5;
+}
