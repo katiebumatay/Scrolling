@@ -1,0 +1,1405 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<title>Scrolling Charette</title>
+	<link rel="stylesheet" href="css/charettestyles.css" />
+	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/script.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:500" rel="stylesheet">
+</head>
+
+
+<body>
+	<div class="skrollr-container">
+
+		<div class="square"
+			data-0p="opacity: 0;"
+			data-100p="opacity: 1;
+			-ms-transform: skew(0deg, 0deg);
+			-webkit-transform: skew(0deg, 0deg); 
+			transform: skew(0deg, 0deg);"
+			data-200p="
+			-ms-transform: skew(30deg, 0deg);
+			-webkit-transform: skew(30deg, 0deg); 
+			transform: skew(30deg, 0deg);"
+			data-300p="
+			-ms-transform: skew(30deg, -20deg);
+			-webkit-transform: skew(30deg, -20deg); 
+			transform: skew(30deg, -20deg);"
+			data-400p="
+			-ms-transform: skew(-60deg, -20deg);
+			-webkit-transform: skew(-60deg, -20deg);
+			transform: skewskew(-60deg, -20deg);"
+			data-500p="
+			-ms-transform: skew(-60deg, 60deg);
+			-webkit-transform: skew(-60deg, 60deg);
+			transform: skewskew(-60deg, 60deg);"
+			data-600p="
+			-ms-transform: scale(1,1);
+			-webkit-transform: scale(1,1); 
+			transform: scale(1,1);"
+			data-700p="
+			-ms-transform: scale(0.5,0.5);
+			-webkit-transform: scale(0.5,0.5); 
+			transform: scale(0.5,0.5);"
+			data-800p="
+			-ms-transform: scale(2,0.5);
+			-webkit-transform: scale(2,0.5); 
+			transform: scale(2,0.5);"
+			data-900p="
+			-ms-transform: scale(2,0);
+			-webkit-transform: scale(2,0); 
+			transform: scale(2,0);">
+		</div>
+		<div class="rectangle" id="rect1"
+			data-0="
+			-ms-transform: scale(1,0);
+			-webkit-transform: scale(1,0); 
+			transform: scale(1,0);"
+			data-900p="
+			-ms-transform: scale(1,0);
+			-webkit-transform: scale(1,0); 
+			transform: scale(1,0);"
+			data-1000p="
+			-ms-transform: scale(1,1);
+			-webkit-transform: scale(1,1); 
+			transform: scale(1,1);"
+			data-1000.1p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-1100p="
+			-ms-transform: translate(-60vw,0vh);
+			-webkit-transform: translate(-60vw,0vh); 
+			transform: translate(-60vw,0vh);"
+			data-1200p="
+			-ms-transform: translate(-60vw,20vh);
+			-webkit-transform: translate(-60vw,20vh); 
+			transform: translate(-60vw,20vh);"
+			data-1300p="
+			-ms-transform: translate(-60vw,20vh);
+			-webkit-transform: translate(-60vw,20vh); 
+			transform: translate(-60vw,20vh);"
+			data-1400p="
+			-ms-transform: translate(-80vw,20vh);
+			-webkit-transform: translate(-80vw,20vh); 
+			transform: translate(-80vw,20vh);"
+			data-1500p="
+			-ms-transform: translate(-30vw,20vh);
+			-webkit-transform: translate(-30vw,20vh); 
+			transform: translate(-30vw,20vh);"
+			data-1520p="
+			-ms-transform: translate(-35vw,20vh);
+			-webkit-transform: translate(-35vw,20vh); 
+			transform: translate(-35vw,20vh);"
+			data-1540p="
+			-ms-transform: translate(-25vw,20vh);
+			-webkit-transform: translate(-25vw,20vh); 
+			transform: translate(-25vw,20vh);"
+			data-1560p="
+			-ms-transform: translate(-35vw,20vh);
+			-webkit-transform: translate(-35vw,20vh); 
+			transform: translate(-35vw,20vh);"
+			data-1580p="
+			-ms-transform: translate(-25vw,20vh);
+			-webkit-transform: translate(-25vw,20vh); 
+			transform: translate(-25vw,20vh);"
+			data-1600p="
+			-ms-transform: translate(-30vw,20vh);
+			-webkit-transform: translate(-30vw,20vh); 
+			transform: translate(-30vw,20vh);"
+			data-1700p="
+			-ms-transform: translate(-30vw,0vh);
+			-webkit-transform: translate(-30vw,0vh); 
+			transform: translate(-30vw,0vh);"
+			data-1800p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-1800.1p="
+			-ms-transform: scale(1,1);
+			-webkit-transform: scale(1,1); 
+			transform: scale(1,1);"
+			data-1900p="
+			-ms-transform: scale(1,0);
+			-webkit-transform: scale(1,0); 
+			transform: scale(1,0);"
+		>
+		</div>
+
+		<div class="rectangle" id="rect2"
+			data-0="
+			-ms-transform: scale(1,0);
+			-webkit-transform: scale(1,0); 
+			transform: scale(1,0);"
+			data-900p="
+			-ms-transform: scale(1,0);
+			-webkit-transform: scale(1,0); 
+			transform: scale(1,0);"
+			data-1000p="
+			-ms-transform: scale(1,1);
+			-webkit-transform: scale(1,1); 
+			transform: scale(1,1);"
+			data-1000.1p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-1100p="
+			-ms-transform: translate(60vw,0vh);
+			-webkit-transform: translate(60vw,0vh); 
+			transform: translate(60vw,0vh);"
+			data-1200p="
+			-ms-transform: translate(60vw,-20vh);
+			-webkit-transform: translate(60vw,-20vh); 
+			transform: translate(60vw,-20vh);"
+			data-1300p="
+			-ms-transform: translate(40vw,-20vh);
+			-webkit-transform: translate(40vw,-20vh); 
+			transform: translate(40vw,-20vh);"
+			data-1500p="
+			-ms-transform: translate(50vw,-20vh);
+			-webkit-transform: translate(50vw,-20vh); 
+			transform: translate(50vw,-20vh);"
+			data-1520p="
+			-ms-transform: translate(55vw,-20vh);
+			-webkit-transform: translate(55vw,-20vh); 
+			transform: translate(55vw,-20vh);"
+			data-1540p="
+			-ms-transform: translate(45vw,-20vh);
+			-webkit-transform: translate(45vw,-20vh); 
+			transform: translate(45vw,-20vh);"
+			data-1560p="
+			-ms-transform: translate(55vw,-20vh);
+			-webkit-transform: translate(55vw,-20vh); 
+			transform: translate(55vw,-20vh);"
+			data-1580p="
+			-ms-transform: translate(45vw,-20vh);
+			-webkit-transform: translate(45vw,-20vh); 
+			transform: translate(45vw,-20vh);"
+			data-1600p="
+			-ms-transform: translate(50vw,-20vh);
+			-webkit-transform: translate(50vw,-20vh); 
+			transform: translate(50vw,-20vh);"
+			data-1700p="
+			-ms-transform: translate(50vw,0vh);
+			-webkit-transform: translate(50vw,0vh); 
+			transform: translate(50vw,0vh);"
+			data-1800p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-1800.1p="
+			-ms-transform: scale(1,1);
+			-webkit-transform: scale(1,1); 
+			transform: scale(1,1);"
+			data-1900p="
+			-ms-transform: scale(1,0);
+			-webkit-transform: scale(1,0); 
+			transform: scale(1,0);"
+		>
+		</div>
+
+		<div class="circle" id="circle1" 
+			data-0p="b
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-1900p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-2000p="
+			-ms-transform: translate(112vw,-20vh);
+			-webkit-transform: translate(112vw,-20vh); 
+			transform: translate(112vw,-20vh);"
+			data-2100p="
+			-ms-transform: translate(80vw,-41vh);
+			-webkit-transform: translate(80vw,-41vh); 
+			transform: translate(80vw,-41vh);"
+			data-2200p="
+			-ms-transform: translate(20vw,25vh);
+			-webkit-transform: translate(20vw,25vh); 
+			transform: translate(20vw,25vh);"
+			data-2300p="
+			-ms-transform: translate(40vw,45vh);
+			-webkit-transform: translate(40vw,45vh); 
+			transform: translate(40vw,45vh);"
+			data-2400p="
+			-ms-transform: translate(112vw,-35vh);
+			-webkit-transform: translate(112vw,-35vh); 
+			transform: translate(112vw,-35vh);"
+			data-2420p="
+			-ms-transform: translate(105vw,-41vh);
+			-webkit-transform: translate(105vw,-41vh); 
+			transform: translate(105vw,-41vh);"
+			data-2500p="
+			-ms-transform: translate(70vw,45vh);
+			-webkit-transform: translate(70vw,45vh); 
+			transform: translate(70vw,45vh);"
+			data-2600p="
+			-ms-transform: translate(30vw,-41vh);
+			-webkit-transform: translate(30vw,-41vh); 
+			transform: translate(30vw,-41vh);"
+			data-2700p="
+			-ms-transform: translate(20vw,0vh);
+			-webkit-transform: translate(20vw,0vh); 
+			transform: translate(20vw,0vh);"
+			data-2800p="
+			-ms-transform: translate(40vw,45vh);
+			-webkit-transform: translate(40vw,45vh); 
+			transform: translate(40vw,45vh);"
+			data-2900p="
+			-ms-transform: translate(100vw,-60vh);
+			-webkit-transform: translate(100vw,-60vh); 
+			transform: translate(100vw,-60vh);"
+		>
+		</div>
+
+
+		<div class="circle" id="circle2" 
+			data-0p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-2200p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-2260p="
+			-ms-transform: translate(112vw,-20vh);
+			-webkit-transform: translate(112vw,-20vh); 
+			transform: translate(112vw,-20vh);"
+			data-2340p="
+			-ms-transform: translate(80vw,-41vh);
+			-webkit-transform: translate(80vw,-41vh); 
+			transform: translate(80vw,-41vh);"
+			data-2420p="
+			-ms-transform: translate(20vw,25vh);
+			-webkit-transform: translate(20vw,25vh); 
+			transform: translate(20vw,25vh);"
+			data-2490p="
+			-ms-transform: translate(40vw,45vh);
+			-webkit-transform: translate(40vw,45vh); 
+			transform: translate(40vw,45vh);"
+			data-2560p="
+			-ms-transform: translate(112vw,-35vh);
+			-webkit-transform: translate(112vw,-35vh); 
+			transform: translate(112vw,-35vh);"
+			data-2580p="
+			-ms-transform: translate(105vw,-41vh);
+			-webkit-transform: translate(105vw,-41vh); 
+			transform: translate(105vw,-41vh);"
+			data-2650p="
+			-ms-transform: translate(70vw,45vh);
+			-webkit-transform: translate(70vw,45vh); 
+			transform: translate(70vw,45vh);"
+			data-2700p="
+			-ms-transform: translate(30vw,-41vh);
+			-webkit-transform: translate(30vw,-41vh); 
+			transform: translate(30vw,-41vh);"
+			data-2770p="
+			-ms-transform: translate(20vw,0vh);
+			-webkit-transform: translate(20vw,0vh); 
+			transform: translate(20vw,0vh);"
+			data-2840p="
+			-ms-transform: translate(40vw,45vh);
+			-webkit-transform: translate(40vw,45vh); 
+			transform: translate(40vw,45vh);"
+			data-2900p="
+			-ms-transform: translate(100vw,-60vh);
+			-webkit-transform: translate(100vw,-60vh); 
+			transform: translate(100vw,-60vh);"
+		>
+		</div>
+
+		<div class="circle" id="circle3" 
+			data-0p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-2500p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-2540p="
+			-ms-transform: translate(112vw,-20vh);
+			-webkit-transform: translate(112vw,-20vh); 
+			transform: translate(112vw,-20vh);"
+			data-2580p="
+			-ms-transform: translate(80vw,-41vh);
+			-webkit-transform: translate(80vw,-41vh); 
+			transform: translate(80vw,-41vh);"
+			data-2620p="
+			-ms-transform: translate(20vw,25vh);
+			-webkit-transform: translate(20vw,25vh); 
+			transform: translate(20vw,25vh);"
+			data-2660p="
+			-ms-transform: translate(40vw,45vh);
+			-webkit-transform: translate(40vw,45vh); 
+			transform: translate(40vw,45vh);"
+			data-2700p="
+			-ms-transform: translate(112vw,-35vh);
+			-webkit-transform: translate(112vw,-35vh); 
+			transform: translate(112vw,-35vh);"
+			data-2710p="
+			-ms-transform: translate(105vw,-41vh);
+			-webkit-transform: translate(105vw,-41vh); 
+			transform: translate(105vw,-41vh);"
+			data-2740p="
+			-ms-transform: translate(70vw,45vh);
+			-webkit-transform: translate(70vw,45vh); 
+			transform: translate(70vw,45vh);"
+			data-2780p="
+			-ms-transform: translate(30vw,-41vh);
+			-webkit-transform: translate(30vw,-41vh); 
+			transform: translate(30vw,-41vh);"
+			data-2820p="
+			-ms-transform: translate(20vw,0vh);
+			-webkit-transform: translate(20vw,0vh); 
+			transform: translate(20vw,0vh);"
+			data-2860p="
+			-ms-transform: translate(40vw,45vh);
+			-webkit-transform: translate(40vw,45vh); 
+			transform: translate(40vw,45vh);"
+			data-2900p="
+			-ms-transform: translate(100vw,-60vh);
+			-webkit-transform: translate(100vw,-60vh); 
+			transform: translate(100vw,-60vh);"
+		>
+		</div>
+
+		<div class="bar" id="bar1"
+			data-0p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-2900p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-3000p="
+			-ms-transform: translate(-100vw,0vh);
+			-webkit-transform: translate(-100vw,0vh); 
+			transform: translate(-100vw,0vh);"
+			data-3900p="
+			-ms-transform: translate(-100vw,0vh);
+			-webkit-transform: translate(-100vw,0vh); 
+			transform: translate(-100vw,0vh);"
+			data-4000p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+
+		>
+		</div>
+
+		<div class="bar" id="bar2"
+			data-0p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-3400p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-3500p="
+			-ms-transform: translate(100vw,0vh);
+			-webkit-transform: translate(100vw,0vh); 
+			transform: translate(100vw,0vh);"
+			data-3900p="
+			-ms-transform: translate(100vw,0vh);
+			-webkit-transform: translate(100vw,0vh); 
+			transform: translate(100vw,0vh);"
+			data-4000p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+		
+		>
+		</div>
+
+		<div class="bar" id="bar3"
+			data-0p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-3000p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-3100p="
+			-ms-transform: translate(-100vw,0vh);
+			-webkit-transform: translate(-100vw,0vh); 
+			transform: translate(-100vw,0vh);"
+			data-3900p="
+			-ms-transform: translate(-100vw,0vh);
+			-webkit-transform: translate(-100vw,0vh); 
+			transform: translate(-100vw,0vh);"
+			data-4000p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+		
+		>
+		</div>
+
+		<div class="bar" id="bar4"
+			data-0p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-3500p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-3600p="
+			-ms-transform: translate(100vw,0vh);
+			-webkit-transform: translate(100vw,0vh); 
+			transform: translate(100vw,0vh);"
+			data-3900p="
+			-ms-transform: translate(100vw,0vh);
+			-webkit-transform: translate(100vw,0vh); 
+			transform: translate(100vw,0vh);"
+			data-4000p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+	
+		>
+		</div>
+
+		<div class="bar" id="bar5"
+			data-0p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-3100p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-3200p="
+			-ms-transform: translate(-100vw,0vh);
+			-webkit-transform: translate(-100vw,0vh); 
+			transform: translate(-100vw,0vh);"
+			data-3900p="
+			-ms-transform: translate(-100vw,0vh);
+			-webkit-transform: translate(-100vw,0vh); 
+			transform: translate(-100vw,0vh);"
+			data-4000p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+		
+		>
+		</div>
+
+		<div class="bar" id="bar6"
+			data-0p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-3600p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-3700p="
+			-ms-transform: translate(100vw,0vh);
+			-webkit-transform: translate(100vw,0vh); 
+			transform: translate(100vw,0vh);"
+			data-3900p="
+			-ms-transform: translate(100vw,0vh);
+			-webkit-transform: translate(100vw,0vh); 
+			transform: translate(100vw,0vh);"
+			data-4000p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+		
+		>
+		</div>
+
+		<div class="bar" id="bar7"
+			data-0p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-3200p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-3300p="
+			-ms-transform: translate(-100vw,0vh);
+			-webkit-transform: translate(-100vw,0vh); 
+			transform: translate(-100vw,0vh);"
+			data-3900p="
+			-ms-transform: translate(-100vw,0vh);
+			-webkit-transform: translate(-100vw,0vh); 
+			transform: translate(-100vw,0vh);"
+			data-4000p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+		
+		>
+		</div>
+
+		<div class="bar" id="bar8"
+			data-0p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-3700p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-3800p="
+			-ms-transform: translate(100vw,0vh);
+			-webkit-transform: translate(100vw,0vh); 
+			transform: translate(100vw,0vh);"
+			data-3900p="
+			-ms-transform: translate(100vw,0vh);
+			-webkit-transform: translate(100vw,0vh); 
+			transform: translate(100vw,0vh);"
+			data-4000p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+		
+		>
+		</div>
+
+		<div class="bar" id="bar9"
+			data-0p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-3300p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-3400p="
+			-ms-transform: translate(-100vw,0vh);
+			-webkit-transform: translate(-100vw,0vh); 
+			transform: translate(-100vw,0vh);"
+			data-3900p="
+			-ms-transform: translate(-100vw,0vh);
+			-webkit-transform: translate(-100vw,0vh); 
+			transform: translate(-100vw,0vh);"
+			data-4000p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+		
+		>
+		</div>
+
+		<div class="bar" id="bar10"
+			data-0p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-3800p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-3900p="
+			-ms-transform: translate(100vw,0vh);
+			-webkit-transform: translate(100vw,0vh); 
+			transform: translate(100vw,0vh);"
+			data-4000p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+		>
+		</div>
+
+		<div class="textbox" id="text1"
+			data-0p="
+			-ms-transform: rotateY(90deg);
+			-webkit-transform: rotateY(90deg); 
+			transform: rotateY(90deg);"
+			data-4000p="
+			-ms-transform: rotateY(90deg);
+			-webkit-transform: rotateY(90deg); 
+			transform: rotateY(90deg);"
+			data-4100p="
+			-ms-transform: rotateY(180deg);
+			-webkit-transform: rotateY(180deg); 
+			transform: rotateY(180deg);"
+			data-4500p="
+			-ms-transform: rotateY(180deg);
+			-webkit-transform: rotateY(180deg); 
+			transform: rotateY(180deg);"
+			data-4600p="
+			-ms-transform: rotateY(0deg);
+			-webkit-transform: rotateY(0deg); 
+			transform: rotateY(0deg);"
+			data-4600.1p="
+			-ms-transform: skew(0deg, 0deg);
+			-webkit-transform: skew(0deg, 0deg); 
+			transform: skew(0deg, 0deg);"
+			data-4650p="
+			-ms-transform: skew(60deg, 0deg);
+			-webkit-transform: skew(60deg, 0deg); 
+			transform: skew(60deg, 0deg);"
+			data-4700p="
+			-ms-transform: skew(0deg, 0deg);
+			-webkit-transform: skew(0deg, 0deg); 
+			transform: skew(0deg, 0deg);"
+			data-4700.1p="
+			-ms-transform: scale(1,1);
+			-webkit-transform: scale(1,1); 
+			transform: scale(1,1);"
+			data-4800p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+
+
+		>
+			<h1>Hello</h1>
+		</div>
+
+		<div class="textbox" id="text2"
+			data-0p="
+			-ms-transform: rotateY(90deg);
+			-webkit-transform: rotateY(90deg); 
+			transform: rotateY(90deg);"
+			data-4000p="
+			-ms-transform: rotateY(90deg);
+			-webkit-transform: rotateY(90deg); 
+			transform: rotateY(90deg);"
+			data-4200p="
+			-ms-transform: rotateY(180deg);
+			-webkit-transform: rotateY(180deg); 
+			transform: rotateY(180deg);"
+			data-4500p="
+			-ms-transform: rotateY(180deg);
+			-webkit-transform: rotateY(180deg); 
+			transform: rotateY(180deg);"
+			data-4600p="
+			-ms-transform: rotateY(0deg);
+			-webkit-transform: rotateY(0deg); 
+			transform: rotateY(0deg);"
+			data-4600.1p="
+			-ms-transform: skew(0deg, 0deg);
+			-webkit-transform: skew(0deg, 0deg); 
+			transform: skew(0deg, 0deg);"
+			data-4650p="
+			-ms-transform: skew(-60deg, 0deg);
+			-webkit-transform: skew(-60deg, 0deg); 
+			transform: skew(-60deg, 0deg);"
+			data-4700p="
+			-ms-transform: skew(0deg, 0deg);
+			-webkit-transform: skew(0deg, 0deg); 
+			transform: skew(0deg, 0deg);"
+			data-4700.1p="
+			-ms-transform: scale(1,1);
+			-webkit-transform: scale(1,1); 
+			transform: scale(1,1);"
+			data-4740p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+		>
+			<h1>there</h1>
+		</div>
+
+		<div class="textbox" id="text3"
+			data-0p="
+			-ms-transform: rotateY(90deg);
+			-webkit-transform: rotateY(90deg); 
+			transform: rotateY(90deg);"
+			data-4000p="
+			-ms-transform: rotateY(90deg);
+			-webkit-transform: rotateY(90deg); 
+			transform: rotateY(90deg);"
+			data-4300p="
+			-ms-transform: rotateY(180deg);
+			-webkit-transform: rotateY(180deg); 
+			transform: rotateY(180deg);"
+			data-4500p="
+			-ms-transform: rotateY(180deg);
+			-webkit-transform: rotateY(180deg); 
+			transform: rotateY(180deg);"
+			data-4600p="
+			-ms-transform: rotateY(0deg);
+			-webkit-transform: rotateY(0deg); 
+			transform: rotateY(0deg);"
+			data-4600.1p="
+			-ms-transform: skew(0deg, 0deg);
+			-webkit-transform: skew(0deg, 0deg); 
+			transform: skew(0deg, 0deg);"
+			data-4650p="
+			-ms-transform: skew(60deg, 0deg);
+			-webkit-transform: skew(60deg, 0deg); 
+			transform: skew(60deg, 0deg);"
+			data-4700p="
+			-ms-transform: skew(0deg, 0deg);
+			-webkit-transform: skew(0deg, 0deg); 
+			transform: skew(0deg, 0deg);"
+			data-4700.1p="
+			-ms-transform: scale(1,1);
+			-webkit-transform: scale(1,1); 
+			transform: scale(1,1);"
+			data-4760p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+		>
+			<h1>new</h1>
+		</div>
+
+		<div class="textbox" id="text4"
+			data-0p="
+			-ms-transform: rotateY(90deg);
+			-webkit-transform: rotateY(90deg); 
+			transform: rotateY(90deg);"
+			data-4000p="
+			-ms-transform: rotateY(90deg);
+			-webkit-transform: rotateY(90deg); 
+			transform: rotateY(90deg);"
+			data-4400p="
+			-ms-transform: rotateY(180deg);
+			-webkit-transform: rotateY(180deg); 
+			transform: rotateY(180deg);"
+			data-4500p="
+			-ms-transform: rotateY(180deg);
+			-webkit-transform: rotateY(180deg); 
+			transform: rotateY(180deg);"
+			data-4600p="
+			-ms-transform: rotateY(0deg);
+			-webkit-transform: rotateY(0deg); 
+			transform: rotateY(0deg);"
+			data-4600.1p="
+			-ms-transform: skew(0deg, 0deg);
+			-webkit-transform: skew(0deg, 0deg); 
+			transform: skew(0deg, 0deg);"
+			data-4650p="
+			-ms-transform: skew(-60deg, 0deg);
+			-webkit-transform: skew(-60deg, 0deg); 
+			transform: skew(-60deg, 0deg);"
+			data-4700p="
+			-ms-transform: skew(0deg, 0deg);
+			-webkit-transform: skew(0deg, 0deg); 
+			transform: skew(0deg, 0deg);"
+			data-4700.1p="
+			-ms-transform: scale(1,1);
+			-webkit-transform: scale(1,1); 
+			transform: scale(1,1);"
+			data-4720p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+		>
+			<h1>friend</h1>
+		</div>
+
+		<div class="textbox" id="text5"
+			data-0p="
+			-ms-transform: rotateY(90deg);
+			-webkit-transform: rotateY(90deg); 
+			transform: rotateY(90deg);"
+			data-4000p="
+			-ms-transform: rotateY(90deg);
+			-webkit-transform: rotateY(90deg); 
+			transform: rotateY(90deg);"
+			data-4500p="
+			-ms-transform: rotateY(180deg);
+			-webkit-transform: rotateY(180deg); 
+			transform: rotateY(180deg);"
+			data-4600p="
+			-ms-transform: rotateY(0deg);
+			-webkit-transform: rotateY(0deg); 
+			transform: rotateY(0deg);"
+			data-4600.1p="
+			-ms-transform: skew(0deg, 0deg);
+			-webkit-transform: skew(0deg, 0deg); 
+			transform: skew(0deg, 0deg);"
+			data-4650p="
+			-ms-transform: skew(60deg, 0deg);
+			-webkit-transform: skew(60deg, 0deg); 
+			transform: skew(60deg, 0deg);"
+			data-4700p="
+			-ms-transform: skew(0deg, 0deg);
+			-webkit-transform: skew(0deg, 0deg); 
+			transform: skew(0deg, 0deg);"
+			data-4700.1p="
+			-ms-transform: scale(1,1);
+			-webkit-transform: scale(1,1); 
+			transform: scale(1,1);"
+			data-4780p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+		>
+			<h1>:)</h1>
+		</div>
+
+		<div class="circles" id="circles1"
+			data-0p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+			data-4800p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+			data-4900p="
+			-ms-transform: scale(3,3);
+			-webkit-transform: scale(3,3); 
+			transform: scale(3,3);"
+			data-5500p="
+			-ms-transform: scale(3.7,3.7);
+			-webkit-transform: scale(3.7,3.7); 
+			transform: scale(3.7,3.7);"
+			data-5600p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+		>
+		</div>
+
+		<div class="circles" id="circles2"
+			data-0p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+			data-4850p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+			data-5000p="
+			-ms-transform: scale(2.5,2.5);
+			-webkit-transform: scale(2.5,2.5); 
+			transform: scale(2.5,2.5);"
+			data-5500p="
+			-ms-transform: scale(2,2);
+			-webkit-transform: scale(2,2); 
+			transform: scale(2,2);"
+			data-5600p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+		>
+		</div>
+
+		<div class="circles" id="circles3"
+			data-0p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+			data-5000p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+			data-5400p="
+			-ms-transform: scale(1.2,1.2);
+			-webkit-transform: scale(1.2,1.2); 
+			transform: scale(1.2,1.2);"
+			data-5500p="
+			-ms-transform: scale(2.5,2.5);
+			-webkit-transform: scale(2.5,2.5); 
+			transform: scale(2.5,2.5);"
+			data-5600p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+		>
+		</div>
+
+		<div class="circles" id="circles4"
+			data-0p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+			data-5100p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+			data-5360p="
+			-ms-transform: scale(2,2);
+			-webkit-transform: scale(2,2); 
+			transform: scale(2,2);"
+			data-5500p="
+			-ms-transform: scale(4.5,4.5);
+			-webkit-transform: scale(4.5,4.5); 
+			transform: scale(4.5,4.5);"
+			data-5600p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+		>
+		</div>
+
+		<div class="circles" id="circles5"
+			data-0p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+			data-4930p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+			data-5200p="
+			-ms-transform: scale(4,4);
+			-webkit-transform: scale(4,4); 
+			transform: scale(4,4);"
+			data-5500p="
+			-ms-transform: scale(4,4);
+			-webkit-transform: scale(4,4); 
+			transform: scale(4,4);"
+			data-5600p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+		>
+		</div>
+
+		<div class="circles" id="circles6"
+			data-0p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+			data-4920p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+			data-5470p="
+			-ms-transform: scale(3,3);
+			-webkit-transform: scale(3,3); 
+			transform: scale(3,3);"
+			data-5500p="
+			-ms-transform: scale(3,3);
+			-webkit-transform: scale(3,3); 
+			transform: scale(3,3);"
+			data-5600p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+		>
+		</div>
+
+		<div class="circles" id="circles7"
+			data-0p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+			data-5200p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+			data-5300p="
+			-ms-transform: scale(6,6);
+			-webkit-transform: scale(6,6); 
+			transform: scale(6,6);"
+			data-5500p="
+			-ms-transform: scale(6,6);
+			-webkit-transform: scale(6,6); 
+			transform: scale(6,6);"
+			data-5600p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+		>
+		</div>
+
+		<div class="circles" id="circles8"
+			data-0p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+			data-4960p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+			data-5500p="
+			-ms-transform: scale(5,5);
+			-webkit-transform: scale(5,5); 
+			transform: scale(5,5);"
+			data-5600p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+		>
+		</div>
+
+		<div class="squares" id="squares1"
+			data-0p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-5600p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-5800p="
+			-ms-transform: translate(0vw,-200vh);
+			-webkit-transform: translate(0vw,-200vh); 
+			transform: translate(0vw,-200vh);"
+		>
+		</div>
+
+		<div class="squares" id="squares2"
+			data-0p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-5700p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-5800p="
+			-ms-transform: translate(0vw,-200vh);
+			-webkit-transform: translate(0vw,-200vh); 
+			transform: translate(0vw,-200vh);"
+		>
+		</div>
+
+		<div class="squares" id="squares3"
+			data-0p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-5600p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-6100p="
+			-ms-transform: translate(0vw,-200vh);
+			-webkit-transform: translate(0vw,-200vh); 
+			transform: translate(0vw,-200vh);"
+		>
+		</div>
+
+		<div class="squares" id="squares4"
+			data-0p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-5600p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-6000p="
+			-ms-transform: translate(0vw,-200vh);
+			-webkit-transform: translate(0vw,-200vh); 
+			transform: translate(0vw,-200vh);"
+		>
+		</div>
+
+		<div class="squares" id="squares5"
+			data-0p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-5600p="
+			-ms-transform: translate(0vw,0vh);
+			-webkit-transform: translate(0vw,0vh); 
+			transform: translate(0vw,0vh);"
+			data-5900p="
+			-ms-transform: translate(0vw,-200vh);
+			-webkit-transform: translate(0vw,-200vh); 
+			transform: translate(0vw,-200vh);"
+		>
+		</div>
+
+		<div class="borderrect"
+			data-0p="border-width: 0px 0px 0px 0px;"
+			data-6000p="border-width: 0px 0px 0px 0px;"
+			data-6050p="border-width: 10px 0px 0px 0px;"
+			data-6100p="border-width: 10px 10px 0px 0px;"
+			data-6150p="border-width: 10px 10px 10px 0px;"
+			data-6200p="border-width: 10px 10px 10px 10px;
+			-ms-transform: skew(0deg, 0deg);
+			-webkit-transform: skew(0deg, 0deg); 
+			transform: skew(0deg, 0deg);"
+			data-6210p="
+			-ms-transform: skew(10deg, 0deg);
+			-webkit-transform: skew(10deg, 0deg); 
+			transform: skew(10deg, 0deg);"
+			data-6220p="
+			-ms-transform: skew(-10deg, 0deg);
+			-webkit-transform: skew(-10deg, 0deg); 
+			transform: skew(-10deg, 0deg);"
+			data-6230p="
+			-ms-transform: skew(10deg, 0deg);
+			-webkit-transform: skew(10deg, 0deg); 
+			transform: skew(10deg, 0deg);"
+			data-6240p="
+			-ms-transform: skew(-10deg, 0deg);
+			-webkit-transform: skew(-10deg, 0deg); 
+			transform: skew(-10deg, 0deg);"
+			data-6250p="
+			-ms-transform: skew(10deg, 0deg);
+			-webkit-transform: skew(10deg, 0deg); 
+			transform: skew(10deg, 0deg);"
+			data-6260p="
+			-ms-transform: skew(-10deg, 0deg);
+			-webkit-transform: skew(-10deg, 0deg); 
+			transform: skew(-10deg, 0deg);"
+			data-6270p="
+			-ms-transform: skew(10deg, 0deg);
+			-webkit-transform: skew(10deg, 0deg); 
+			transform: skew(10deg, 0deg);"
+			data-6280p="
+			-ms-transform: skew(-10deg, 0deg);
+			-webkit-transform: skew(-10deg, 0deg); 
+			transform: skew(-10deg, 0deg);"
+			data-6290p="
+			-ms-transform: skew(10deg, 0deg);
+			-webkit-transform: skew(10deg, 0deg); 
+			transform: skew(10deg, 0deg);"
+			data-6300p="
+			-ms-transform: skew(-10deg, 0deg);
+			-webkit-transform: skew(-10deg, 0deg); 
+			transform: skew(-10deg, 0deg);"
+			data-6400p="border-width: 50px 50px 50px 50px;
+			-ms-transform: skew(-10deg, 80deg);
+			-webkit-transform: skew(-10deg, 80deg); 
+			transform: skew(-10deg, 80deg);"
+			data-6500p="border-width: 50px 50px 50px 50px;
+			-ms-transform: skew(-90deg, 80deg);
+			-webkit-transform: skew(-90deg, 80deg); 
+			transform: skew(-90deg, 80deg);"
+
+		>
+		</div>
+
+		<div class="bordercirc" id="bordercirc1"
+			data-0p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+			data-6500p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+			data-6600p="
+			-ms-transform: scale(1,1);
+			-webkit-transform: scale(1,1); 
+			transform: scale(1,1);"
+			data-6600.1p="
+			-ms-transform: skew(0deg, 0deg);
+			-webkit-transform: skew(0deg, 0deg); 
+			transform: skew(0deg, 0deg);"
+			data-6700p="
+			-ms-transform: skew(60deg, 0deg);
+			-webkit-transform: skew(60deg, 0deg); 
+			transform: skew(60deg, 0deg);"
+		>
+		</div>
+
+		<div class="bordercirc" id="bordercirc2"
+			data-0p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+			data-6500p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+			data-6600p="
+			-ms-transform: scale(1,1);
+			-webkit-transform: scale(1,1); 
+			transform: scale(1,1);"
+			data-6700p="
+			-ms-transform: scale(1,1);
+			-webkit-transform: scale(1,1); 
+			transform: scale(1,1);"
+			data-6700.1p="
+			-ms-transform: skew(0deg, 0deg);
+			-webkit-transform: skew(0deg, 0deg); 
+			transform: skew(0deg, 0deg);"
+			data-6800p="
+			-ms-transform: skew(-60deg, 0deg);
+			-webkit-transform: skew(-60deg, 0deg); 
+			transform: skew(-60deg, 0deg);"
+		>
+		</div>
+
+		<div class="bordercirc" id="bordercirc3"
+			data-0p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+			data-6500p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+			data-6600p="
+			-ms-transform: scale(1,1);
+			-webkit-transform: scale(1,1); 
+			transform: scale(1,1);"
+			data-6800p="
+			-ms-transform: scale(1,1);
+			-webkit-transform: scale(1,1); 
+			transform: scale(1,1);"
+			data-6800.1p="
+			-ms-transform: skew(0deg, 0deg);
+			-webkit-transform: skew(0deg, 0deg); 
+			transform: skew(0deg, 0deg);"
+			data-6900p="
+			-ms-transform: skew(0deg, 60deg);
+			-webkit-transform: skew(0deg, 60deg); 
+			transform: skew(0deg, 60deg);"
+
+		>
+		</div>
+
+		<div class="bordercirc" id="bordercirc4"
+			data-0p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+			data-6500p="
+			-ms-transform: scale(0,0);
+			-webkit-transform: scale(0,0); 
+			transform: scale(0,0);"
+			data-6600p="
+			-ms-transform: scale(1,1);
+			-webkit-transform: scale(1,1); 
+			transform: scale(1,1);"
+			data-6900.1p="
+			-ms-transform: scale(1,1);
+			-webkit-transform: scale(1,1); 
+			transform: scale(1,1);"
+			data-6900p="
+			-ms-transform: skew(0deg, 0deg);
+			-webkit-transform: skew(0deg, 0deg); 
+			transform: skew(0deg, 0deg);"
+			data-7000p="
+			-ms-transform: skew(0deg, -60deg);
+			-webkit-transform: skew(0deg,-60deg); 
+			transform: skew(0deg, -60deg);"
+		>
+		</div>
+
+		
+
+
+
+
+	</div>
+
+<!-- 				<div class="rectangle" id="rect2"
+			data-0="
+			-ms-transform: scale(1,0);
+			-webkit-transform: scale(1,0); 
+			transform: scale(1,0);"
+			data-900p="
+			-ms-transform: scale(1,0);
+			-webkit-transform: scale(1,0); 
+			transform: scale(1,0);"
+			data-1000p="
+			-ms-transform: scale(1,1);
+			-webkit-transform: scale(1,1); 
+			transform: scale(1,1);
+			-ms-transform: translate(0px,0px);
+			-webkit-transform: translate(0px,0px); 
+			transform: translate(0px,0px);"
+			data-1200p="
+			-ms-transform: translate(500px,0px);
+			-webkit-transform: translate(500px,0px); 
+			transform: translate(500px,0px);"
+		>
+		</div> -->
+
+
+		<div id='helper'>
+			<div class="marker scroll1">1</div>
+			<div class="marker scroll2">2</div>
+			<div class="marker scroll3">3</div>
+			<div class="marker scroll4">4</div>
+			<div class="marker scroll5">5</div>
+			<div class="marker scroll6">6</div>
+			<div class="marker scroll7">7</div>
+			<div class="marker scroll8">8</div>
+			<div class="marker scroll9">9</div>
+			<div class="marker scroll0">10</div>
+			<div class="marker scroll11">11</div>
+			<div class="marker scroll12">12</div>
+			<div class="marker scroll13">13</div>
+			<div class="marker scroll14">14</div>
+			<div class="marker scroll15">15</div>
+			<div class="marker scroll16">16</div>
+			<div class="marker scroll17">17</div>
+			<div class="marker scroll18">18</div>
+			<div class="marker scroll19">19</div>
+			<div class="marker scroll20">20</div>
+			<div class="marker scroll21">21</div>
+			<div class="marker scroll22">22</div>
+			<div class="marker scroll23">23</div>
+			<div class="marker scroll24">24</div>
+			<div class="marker scroll25">25</div>
+			<div class="marker scroll26">26</div>
+			<div class="marker scroll27">27</div>
+			<div class="marker scroll28">28</div>
+			<div class="marker scroll29">29</div>
+			<div class="marker scroll30">30</div>
+			<div class="marker scroll31">31</div>
+			<div class="marker scroll32">32</div>
+			<div class="marker scroll33">33</div>
+			<div class="marker scroll34">34</div>
+			<div class="marker scroll35">35</div>
+			<div class="marker scroll36">36</div>
+			<div class="marker scroll37">37</div>
+			<div class="marker scroll38">38</div>
+			<div class="marker scroll39">39</div>
+			<div class="marker scroll40">40</div>
+			<div class="marker scroll41">41</div>
+			<div class="marker scroll42">42</div>
+			<div class="marker scroll43">43</div>
+			<div class="marker scroll44">44</div>
+			<div class="marker scroll45">45</div>
+			<div class="marker scroll46">46</div>
+			<div class="marker scroll47">47</div>
+			<div class="marker scroll48">48</div>
+			<div class="marker scroll49">49</div>
+			<div class="marker scroll50">50</div>
+			<div class="marker scroll51">51</div>
+			<div class="marker scroll52">52</div>
+			<div class="marker scroll53">53</div>
+			<div class="marker scroll54">54</div>
+			<div class="marker scroll55">55</div>
+			<div class="marker scroll56">56</div>
+			<div class="marker scroll57">57</div>
+			<div class="marker scroll58">58</div>
+			<div class="marker scroll59">59</div>
+			<div class="marker scroll60">60</div>
+			<div class="marker scroll61">61</div>
+			<div class="marker scroll62">62</div>
+			<div class="marker scroll63">63</div>
+			<div class="marker scroll64">64</div>
+			<div class="marker scroll65">65</div>
+			<div class="marker scroll66">66</div>
+			<div class="marker scroll67">67</div>
+			<div class="marker scroll68">68</div>
+			<div class="marker scroll69">69</div>
+			<div class="marker scroll70">70</div>
+			<div class="marker scroll71">71</div>
+			<div class="marker scroll72">72</div>
+			<div class="marker scroll73">73</div>
+			<div class="marker scroll74">74</div>
+			<div class="marker scroll75">75</div>
+			<div class="marker scroll76">76</div>
+			<div class="marker scroll77">77</div>
+			<div class="marker scroll78">78</div>
+			<div class="marker scroll79">79</div>
+			<div class="marker scroll80">80</div>
+		</div>
+
+
+	<script src="scripts/skrollr.min.js"></script>
+
+	<script type="text/javascript">
+    	var s = skrollr.init({
+		});
+	</script>
+
+
+</body>
+
+</html>
