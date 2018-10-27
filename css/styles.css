@@ -1,14 +1,27 @@
 html, body{
 	width: 100%;
 	height:100%;
+	margin: 0;
+	padding: 0;
 
 }
 
 .skrollr-container{
+	z-index: 5;
 	position: fixed;
 	width: 100vw;
 	height:100vh;
 	overflow:hidden;
+}
+
+.window {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100vw;
+	height: 1000vh;
+	opacity: 0;
 }
 
 
@@ -27,21 +40,21 @@ html, body{
 	position:absolute;
 	left:0;
 	top:0;
-	height:500%;
+	height:1000%;
 	width:2%;
 	opacity: 0;
 }
 
 .marker{
 	width:100%; /* 100% of helper */
-	height:20%;
+	height:10%;
 	font-family: arial;
 	font-weight: bold;
 }
 
 .small-container {
 	position: relative;
-	width: 15%;
+	width: 25%;
 	height: 25%;
 	margin: auto;
 	float: left;
@@ -75,26 +88,29 @@ h4 {
 	position: absolute;
 	top: 0;
 	left: 0;
-	color: black;
+	margin-top: 100%;
+	/*color: black;*/
+	color: white;
 	font-size: 200vh;
 	font-family: 'IBM Plex Mono', monospace;
-	overflow: hidden;
+/*	overflow: hidden;*/
+	line-height: 1em;
 }
 
 .orangeBG {
-	background-color: #ff6d3d;
+	/*background-color: #ff6d3d;*/
 }
 
 .blueBG {
-	background-color: #4286f4;
+	/*background-color: #4286f4;*/
 }
 
 .yellowBG {
-	background-color: #ffee38;
+	/*background-color: #ffee38;*/
 }
 
 .pinkBG {
-	background-color: #cc1e44;
+	/*background-color: #cc1e44;*/
 }
 
 
