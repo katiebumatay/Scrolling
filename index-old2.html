@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<title>Scrolling Charette</title>
+	<link rel="stylesheet" href="css/styles-old2.css" />
+	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+	<script src="scripts/script-old2.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:500" rel="stylesheet">
+</head>
+
+
+<body>
+	<div class="window"></div>
+	<div class="skrollr-container">
+		<div class="small-container orangeBG">
+			<div class="content-container">
+				<h4 class="size1"
+				data-0p="
+				-ms-transform: translate(0vw,0vh);
+				-webkit-transform: translate(0vw,0vh); 
+				transform: translate(0vw,0vh);"
+				data-1000p="
+				-ms-transform: translate(0vw,-200vh);
+				-webkit-transform: translate(0vw,-200vh); 
+				transform: translate(0vw,-200vh);"
+				>a<br/>A</h4>
+			</div>
+		</div>	
+		<div class="small-container blueBG">
+			<div class="content-container">
+				<h4 class="size2"
+				data-0p="
+				-ms-transform: translate(0vw,0vh);
+				-webkit-transform: translate(0vw,0vh); 
+				transform: translate(0vw,0vh);"
+				data-1000p="
+				-ms-transform: translate(0vw,-300vh);
+				-webkit-transform: translate(0vw,-300vh); 
+				transform: translate(0vw,-300vh);"
+				>b<br/>B</h4>
+			</div>
+		</div>	
+		<!-- <div class="small-container blueBG">
+			<div class="content-container">
+				<h4 class="size2"
+				data-0p="
+				-ms-transform: translate(50vw,-60vh);
+				-webkit-transform: translate(50vw,-60vh); 
+				transform: translate(50vw,-60vh);"
+				data-1000p="
+				-ms-transform: translate(-200vw,-60vh);
+				-webkit-transform: translate(-200vw,-60vh); 
+				transform: translate(-200vw,-60vh);"
+				>b B</h4>
+			</div>
+		</div>	 -->
+		<div class="small-container yellowBG">
+			<div class="content-container">
+				<h4 class="size3"
+				data-0p="
+				-ms-transform: translate(0vw,0vh);
+				-webkit-transform: translate(0vw,0vh); 
+				transform: translate(0vw,0vh);"
+				data-1000p="
+				-ms-transform: translate(0vw,-400vh);
+				-webkit-transform: translate(0vw,-400vh); 
+				transform: translate(0vw,-400vh);"
+				>c<br/>C</h4>
+			</div>
+		</div>	
+		<div class="small-container pinkBG">
+			<div class="content-container">
+				<h4 class="size4"
+				data-0p="
+				-ms-transform: translate(0vw,0vh);
+				-webkit-transform: translate(0vw,0vh); 
+				transform: translate(0vw,0vh);"
+				data-1000p="
+				-ms-transform: translate(0vw,-500vh);
+				-webkit-transform: translate(0vw,-500vh); 
+				transform: translate(0vw,-500vh);"
+				>d<br/>D</h4>
+			</div>
+		</div>
+		<div class="small-container orangeBG">
+			<div class="content-container">
+				<h4 class="size1"
+				data-0p="
+				-ms-transform: translate(-5vw,0vh);
+				-webkit-transform: translate(-5vw,0vh); 
+				transform: translate(-5vw,0vh);"
+				data-1000p="
+				-ms-transform: translate(-5vw,-200vh);
+				-webkit-transform: translate(-5vw,-200vh); 
+				transform: translate(-5vw,-200vh);"
+				>E<br/>e</h4>
+			</div>
+		</div>	
+		<div class="small-container blueBG">
+			<div class="content-container">
+				<h4 class="size2"
+				data-0p="
+				-ms-transform: translate(-5vw,0vh);
+				-webkit-transform: translate(-5vw,0vh); 
+				transform: translate(-5vw,0vh);"
+				data-1000p="
+				-ms-transform: translate(-5vw,-300vh);
+				-webkit-transform: translate(-5vw,-300vh); 
+				transform: translate(-5vw,-300vh);"
+				>F<br/>f</h4>
+			</div>
+		</div>	
+		<div class="small-container yellowBG">
+			<div class="content-container">
+				<h4 class="size3"
+				data-0p="
+				-ms-transform: translate(-5vw,0vh);
+				-webkit-transform: translate(-5vw,0vh); 
+				transform: translate(-5vw,0vh);"
+				data-1000p="
+				-ms-transform: translate(-5vw,-400vh);
+				-webkit-transform: translate(-5vw,-400vh); 
+				transform: translate(-5vw,-400vh);"
+				>G<br/>g</h4>
+			</div>
+		</div>	
+		<div class="small-container pinkBG">
+			<div class="content-container">
+				<h4 class="size4"
+				data-0p="
+				-ms-transform: translate(-5vw,0vh);
+				-webkit-transform: translate(-5vw,0vh); 
+				transform: translate(-5vw,0vh);"
+				data-1000p="
+				-ms-transform: translate(-5vw,-500vh);
+				-webkit-transform: translate(-5vw,-500vh); 
+				transform: translate(-5vw,-500vh);"
+				>H<br/>h</h4>
+			</div>
+		</div>
+		<div class="small-container orangeBG">
+			<div class="content-container">
+				<h4 class="size1"
+				data-0p="
+				-ms-transform: translate(0vw,0vh);
+				-webkit-transform: translate(0vw,0vh); 
+				transform: translate(0vw,0vh);"
+				data-1000p="
+				-ms-transform: translate(0vw,-200vh);
+				-webkit-transform: translate(0vw,-200vh); 
+				transform: translate(0vw,-200vh);"
+				>i<br/>I</h4>
+			</div>
+		</div>	
+		<div class="small-container blueBG">
+			<div class="content-container">
+				<h4 class="size2"
+				data-0p="
+				-ms-transform: translate(-10vw,0vh);
+				-webkit-transform: translate(-10vw,0vh); 
+				transform: translate(-10vw,0vh);"
+				data-1000p="
+				-ms-transform: translate(-10vw,-300vh);
+				-webkit-transform: translate(-10vw,-300vh); 
+				transform: translate(-10vw,-300vh);"
+				>j<br/>J</h4>
+			</div>
+		</div>	
+		<div class="small-container yellowBG">
+			<div class="content-container">
+				<h4 class="size3"
+				data-0p="
+				-ms-transform: translate(-10vw,0vh);
+				-webkit-transform: translate(-10vw,0vh); 
+				transform: translate(-10vw,0vh);"
+				data-1000p="
+				-ms-transform: translate(-10vw,-400vh);
+				-webkit-transform: translate(-10vw,-400vh); 
+				transform: translate(-10vw,-400vh);"
+				>k<br/>K</h4>
+			</div>
+		</div>	
+		<div class="small-container pinkBG">
+			<div class="content-container">
+				<h4 class="size4"
+				data-0p="
+				-ms-transform: translate(-10vw,0vh);
+				-webkit-transform: translate(-10vw,0vh); 
+				transform: translate(-10vw,0vh);"
+				data-1000p="
+				-ms-transform: translate(-10vw,-500vh);
+				-webkit-transform: translate(-10vw,-500vh); 
+				transform: translate(-10vw,-500vh);"
+				>l<br/>L</h4>
+			</div>
+		</div>
+		<div class="small-container orangeBG">
+			<div class="content-container">
+				<h4 class="size1"
+				data-0p="
+				-ms-transform: translate(-5vw,0vh);
+				-webkit-transform: translate(-5vw,0vh); 
+				transform: translate(-5vw,0vh);"
+				data-1000p="
+				-ms-transform: translate(-5vw,-200vh);
+				-webkit-transform: translate(-5vw,-200vh); 
+				transform: translate(-5vw,-200vh);"
+				>M<br/>m</h4>
+			</div>
+		</div>	
+		<div class="small-container blueBG">
+			<div class="content-container">
+				<h4 class="size2"
+				data-0p="
+				-ms-transform: translate(0vw,0vh);
+				-webkit-transform: translate(0vw,0vh); 
+				transform: translate(0vw,0vh);"
+				data-1000p="
+				-ms-transform: translate(0vw,-300vh);
+				-webkit-transform: translate(0vw,-300vh); 
+				transform: translate(0vw,-300vh);"
+				>N<br/>n</h4>
+			</div>
+		</div>	
+		<div class="small-container yellowBG">
+			<div class="content-container">
+				<h4 class="size3"
+				data-0p="
+				-ms-transform: translate(-15vw,0vh);
+				-webkit-transform: translate(-15vw,0vh); 
+				transform: translate(-15vw,0vh);"
+				data-1000p="
+				-ms-transform: translate(-15vw,-400vh);
+				-webkit-transform: translate(-15vw,-400vh); 
+				transform: translate(-15vw,-400vh);"
+				>O<br/>o</h4>
+			</div>
+		</div>	
+		<div class="small-container pinkBG">
+			<div class="content-container">
+				<h4 class="size4"
+				data-0p="
+				-ms-transform: translate(-15vw,0vh);
+				-webkit-transform: translate(-15vw,0vh); 
+				transform: translate(-15vw,0vh);"
+				data-1000p="
+				-ms-transform: translate(-15vw,-500vh);
+				-webkit-transform: translate(-15vw,-500vh); 
+				transform: translate(-15vw,-500vh);"
+				>P<br/>p</h4>
+			</div>
+		</div>
+		<div class="small-container orangeBG">
+			<div class="content-container">
+				<h4 class="size1"
+				data-0p="
+				-ms-transform: translate(0vw,0vh);
+				-webkit-transform: translate(0vw,0vh); 
+				transform: translate(0vw,0vh);"
+				data-1000p="
+				-ms-transform: translate(0vw,-200vh);
+				-webkit-transform: translate(0vw,-200vh); 
+				transform: translate(0vw,-200vh);"
+				>q<br/>Q</h4>
+			</div>
+		</div>	
+		<div class="small-container blueBG">
+			<div class="content-container">
+				<h4 class="size2"
+				data-0p="
+				-ms-transform: translate(-5vw,0vh);
+				-webkit-transform: translate(-5vw,0vh); 
+				transform: translate(-5vw,0vh);"
+				data-1000p="
+				-ms-transform: translate(-5vw,-300vh);
+				-webkit-transform: translate(-5vw,-300vh); 
+				transform: translate(-5vw,-300vh);"
+				>r<br/>R</h4>
+			</div>
+		</div>	
+		<div class="small-container yellowBG">
+			<div class="content-container">
+				<h4 class="size3"
+				data-0p="
+				-ms-transform: translate(0vw,0vh);
+				-webkit-transform: translate(0vw,0vh); 
+				transform: translate(0vw,0vh);"
+				data-1000p="
+				-ms-transform: translate(0vw,-400vh);
+				-webkit-transform: translate(0vw,-400vh); 
+				transform: translate(0vw,-400vh);"
+				>s<br/>S</h4>
+			</div>
+		</div>	
+		<div class="small-container pinkBG">
+			<div class="content-container">
+				<h4 class="size4"
+				data-0p="
+				-ms-transform: translate(-20vw,0vh);
+				-webkit-transform: translate(-20vw,0vh); 
+				transform: translate(-20vw,0vh);"
+				data-1000p="
+				-ms-transform: translate(-20vw,-500vh);
+				-webkit-transform: translate(-20vw,-500vh); 
+				transform: translate(-20vw,-500vh);"
+				>t<br/>T</h4>
+			</div>
+		</div>
+		<div class="small-container orangeBG">
+			<div class="content-container">
+				<h4 class="size1"
+				data-0p="
+				-ms-transform: translate(-5vw,0vh);
+				-webkit-transform: translate(-5vw,0vh); 
+				transform: translate(-5vw,0vh);"
+				data-1000p="
+				-ms-transform: translate(-5vw,-200vh);
+				-webkit-transform: translate(-5vw,-200vh); 
+				transform: translate(-5vw,-200vh);"
+				>u<br/>U</h4>
+			</div>
+		</div>	
+		<div class="small-container blueBG">
+			<div class="content-container">
+				<h4 class="size2"
+				data-0p="
+				-ms-transform: translate(-10vw,0vh);
+				-webkit-transform: translate(-10vw,0vh); 
+				transform: translate(-10vw,0vh);"
+				data-1000p="
+				-ms-transform: translate(-10vw,-300vh);
+				-webkit-transform: translate(-10vw,-300vh); 
+				transform: translate(-10vw,-300vh);"
+				>v<br/>V</h4>
+			</div>
+		</div>	
+		<div class="small-container yellowBG">
+			<div class="content-container">
+				<h4 class="size3"
+				data-0p="
+				-ms-transform: translate(-5vw,0vh);
+				-webkit-transform: translate(-5vw,0vh); 
+				transform: translate(-5vw,0vh);"
+				data-1000p="
+				-ms-transform: translate(-5vw,-400vh);
+				-webkit-transform: translate(-5vw,-400vh); 
+				transform: translate(-5vw,-400vh);"
+				>w<br/>W</h4>
+			</div>
+		</div>	
+		<div class="small-container pinkBG">
+			<div class="content-container">
+				<h4 class="size4"
+				data-0p="
+				-ms-transform: translate(-10vw,0vh);
+				-webkit-transform: translate(-10vw,0vh); 
+				transform: translate(0vw,0vh);"
+				data-1000p="
+				-ms-transform: translate(0vw,-500vh);
+				-webkit-transform: translate(0vw,-500vh); 
+				transform: translate(0vw,-500vh);"
+				>x<br/>X</h4>
+			</div>
+		</div>
+		
+
+	</div>
+
+
+
+		<div id='helper'>
+			<div class="marker scroll1">1</div>
+			<div class="marker scroll2">2</div>
+			<div class="marker scroll3">3</div>
+			<div class="marker scroll4">4</div>
+			<div class="marker scroll5">5</div>
+		</div>
+
+	<script src="scripts/skrollr.min.js"></script>
+
+	<script type="text/javascript">
+    	var s = skrollr.init({
+		});
+	</script>
+
+
+</body>
+
+</html>

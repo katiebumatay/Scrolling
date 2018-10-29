@@ -15,6 +15,16 @@ $(document).ready(function() {
         $(this).css('width',newWidth);
     });
 
+    // $.fn.reloadAtTop = function() {
+    //     var scrollTop = $(window).scrollTop();
+    //     var elementOffset = $('.end').offset().top;
+    //     var distance = (elementOffset - scrollTop);
+    //     while (distance != 0) {
+    //          console.log(distance)
+    //     }
+    // }
+    
+
     // $('.small-container').each(function(){
     //     var newHeight = Math.floor(Math.random()* 10)+ 15 + '%';
     //     $(this).css('height',newHeight);
@@ -65,12 +75,10 @@ $(document).ready(function() {
         for(var i = 0; i < four.length; i ++) {
             var m = Math.floor(Math.random() * 100); 
             let neg = Math.random();
-            console.log(neg)
             if (neg > 0.5) {
                 m = m * -1
             }
             m = m + '%'
-            console.log(m)
             $(four[i]).animate({marginLeft: m,}, 0);
         }
     }
@@ -90,6 +98,7 @@ $(document).ready(function() {
         $('h2').placementtwo();
         $('h3').placementthree();
         $('h4').placementfour();
+        // $('body').reloadAtTop();
 
         var fonts = ['IBM Plex Mono', 'Montserrat', 'Roboto Slab', 'Playfair Display', 'Rubik', 'Arvo',
             'Abril Fatface', 'Domine', 'Archivo Black', 'Black Han Sans', 'Philosopher', 'Ultra', 'Barlow Semi Condensed',
