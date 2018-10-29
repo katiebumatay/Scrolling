@@ -120,7 +120,7 @@ $(window).scroll(function() {
   if($(window).scrollTop() + $(window).height() >= $(document).height()) {
     // window.location.reload(true);
     // $(this).scrollTop(0);
-    location.assign("index-copy.html");
+    location.assign("index.html");
   }
 });
 
