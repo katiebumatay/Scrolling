@@ -9,26 +9,12 @@ $(document).ready(function() {
             cells.eq(target).before(cells.eq(target2));
         }
     }
-
-    $('.small-container').each(function(){
-        var newWidth = Math.floor(Math.random()* 25)+ 10 + '%';
-        $(this).css('width',newWidth);
-    });
-
-    // $.fn.reloadAtTop = function() {
-    //     var scrollTop = $(window).scrollTop();
-    //     var elementOffset = $('.end').offset().top;
-    //     var distance = (elementOffset - scrollTop);
-    //     while (distance != 0) {
-    //          console.log(distance)
-    //     }
-    // }
     
 
-    // $('.small-container').each(function(){
-    //     var newHeight = Math.floor(Math.random()* 10)+ 15 + '%';
-    //     $(this).css('height',newHeight);
-    // });
+    $('.small-container').each(function(){
+        var newWidth = Math.floor(Math.random()* 20)+ 15 + '%';
+        $(this).css('width',newWidth);
+    });
 
     $.fn.placementone = function() {
         var one = $('h1');
@@ -84,13 +70,6 @@ $(document).ready(function() {
     }
 
 
-
-
-
-    // var fonts = [ "serif", "sans-serif"];
-    // var num = Math.floor(Math.random()*2);
-    // document.body.style.fontFamily = fonts[num];
-
     $(function(){
 
         $('body').switchSpots();
@@ -111,24 +90,29 @@ $(document).ready(function() {
         document.body.style.fontFamily = fonts[num];
         document.body.style.fontWeight = weights[w];
 
-        // $('body').randFont();
-        // $('h1').placementone();
-        // $('h2').placementtwo();
+
+        // var colors = ['#e8dfbb', '#ff0048', '#03005b', '#ff8c00', '#166263', '#ffafdb', '#7c0034', 
+        // '#ff5f38', '#003316', '#3dff9a', '#edf6ff'];
+        // var colors = ['#94D4BF', '#3AA884', '#09996A', '#006F4B', '#003F2A', '#FFE7B1', '#FCC957', '#E6A30D', 
+        // '#A67300', '#5F4100', '#FFCBB1', '#FC8F57', '#E6560D', '#A63800', '#5F2000', '#9CAAD6', '#475EAA', '#1A389C', '#0B2371', '#031140'];
+        // var num1 = Math.floor(Math.random()*20);
+        // var num2 = Math.floor(Math.random()*20);
+        // if (num1 == num2) {
+        //     num2 = num2+1;
+        // }
+        // document.body.style.backgroundColor= colors[num1];
+        // document.body.style.color = colors[num2];
+
+        var graynum = Math.floor(Math.random()*245) + 10;
+        document.body.style.color = ["rgb(",graynum,",",graynum,",",graynum,")"].join("");
     });
 
 $(window).scroll(function() {
   if($(window).scrollTop() + $(window).height() >= $(document).height()) {
-    // window.location.reload(true);
-    // $(this).scrollTop(0);
     location.assign("index.html");
   }
 });
 
-// var fontType = [ "Arial", "Verdana", "Helvetica"];
-// var num;
-// num=Math.floor(Math.random()*3);
-// document.getElementByClass(".size1, .size2").style.fontFamily =fontType[num];
-// console.log(num)
 
 // setTimeout(function(){
 //     location.reload();
